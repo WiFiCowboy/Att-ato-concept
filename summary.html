@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>AT&T | you Coach ATO</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+      $(function(){
+          $('a').each(function(){
+              if ($(this).prop('href') == window.location.href) {
+                  $(this).addClass('active'); $(this).parents('li').addClass('active');
+              }
+          });
+      });
+
+  </script>
+</head>
+
+<body>
+
+  <header>
+  <img src="images/AT&T_globe.png" alt="globe" title="attGlobe" class="left" />
+  <img src="images/owl2.png" alt="owl" title="owl" class="owl" />
+  <h1>you Coach ATO</h1>
+  <div id="nav_bar">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav">Home</a></li>
+        <li><a href="create.html" class="nav">Create plan</a></li>
+        <li><a href="review.html" class="nav">Review/ Edit plan</a></li>
+        <li><a href="coaching.html" class="nav">Coaching/ Ride Day</a></li>
+        <li><a href="summary.html" class="nav">Summary</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <div>
+    <p>Select organization | manager | plan:</p>
+    <select name="plans">
+		  <option value="text">DTV</option>
+		  <option value="text">IEFS</option>
+		  <option value="text">TFS</option>
+	  </select> 
+    <select name="plans">
+		  <option value="text">Manager A</option>
+		  <option value="text">Manager B</option>
+		  <option value="text">Manager C</option>
+	  </select>
+    <select name="plans">
+		  <option value="date">1/1/2018</option>
+		  <option value="date">4/1/2018</option>
+		  <option value="date">7/1/2018</option>
+		  <option value="date">10/1/2018</option>
+	  </select>	
+  </div><br>
+  <div id="cpTop">
+    <table>
+      <tr>
+        <th>Current Plan goals</th>
+        <th>30 Day</th>
+        <th>60 Day</th>
+        <th>90 Day</th>
+      </tr>
+      <tr>
+        <th>Productivity</th>
+        <td>91%</td>
+        <td>95%</td>
+        <td>98%</td>
+      </tr>
+      <tr>
+        <th>Dispatch Efficiency</th>
+        <td>80%</td>
+        <td>83%</td>
+        <td>86%</td>
+      </tr>
+      <tr>
+        <th>AIQ</th>
+        <td>90%</td>
+        <td>93%</td>
+        <td>>=95%</td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <th>Plan progress</th>
+        <th>30 Day</th>
+        <th>60 Day</th>
+        <th>90 Day</th>
+      </tr>
+      <tr>
+        <th>Productivity</th>
+        <td>on track</td>
+        <td>on track</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Dispatch Efficiency</th>
+        <td>on track</td>
+        <td>on track</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>AIQ</th>
+        <td>on track</td>
+        <td>not on track</td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+  <div id="cpMid">
+    <h2 id="cpr">Current Team results:</h2>
+    <a href="http://msocesm.web.att.com/msoc/reports/tech/crewSummary.cfm?start=y" target="_blank" >MSOC results</a><br>
+  </div>
+  <div id="cpTop">
+    <table>
+      <tr>
+        <th>Prior plan</th>
+        <th scope="col">30 Day</th>
+        <th scope="col">60 Day</th>
+        <th scope="col">90 Day</th>
+      </tr>
+      <tr>
+        <th scope="row">Productivity</th>
+        <td>on track</td>
+        <td>on track</td>
+        <td>complete</td>
+      </tr>
+      <tr>
+        <th scope="row">Dispatch Efficiency</th>
+        <td>on track</td>
+        <td>on track</td>
+        <td>complete</td>
+      </tr>
+      <tr>
+        <th scope="row">AIQ</th>
+        <td>on track</td>
+        <td>not on track</td>
+        <td>extended</td>
+      </tr>
+    </table>
+  </div>
+  <footer>Created by: Humberto Hernandez | Contact: HH8905@att.com<br> Created for demonstration purpose only.
+  </footer>
+</body>
+
+</html>

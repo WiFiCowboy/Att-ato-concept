@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>AT&T | you Coach ATO</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+      $(function(){
+          $('a').each(function(){
+              if ($(this).prop('href') == window.location.href) {
+                  $(this).addClass('active'); $(this).parents('li').addClass('active');
+              }
+          });
+      });
+
+  </script>
+</head>
+
+<body>
+  <script>
+
+    function la(src)
+    {
+
+    window.location=src;  
+    }
+  </script>
+  <header>
+  <img src="images/AT&T_globe.png" alt="globe" title="attGlobe" class="left" />
+  <img src="images/owl2.png" alt="owl" title="owl" class="owl" />
+  <h1>you Coach ATO</h1>
+  <div id="nav_bar">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav">Home</a></li>
+        <li><a href="create.html" class="nav">Create plan</a></li>
+        <li><a href="review.html" class="nav">Review/ Edit plan</a></li>
+        <li><a href="coaching.html" class="nav">Coaching/ Ride Day</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <div>
+    <p>Select manager | plan | goal for review:</p>
+    <select onchange="la(this.value)">
+      <option value="reviewMgrA30.html">Manager A</option>
+      <option value="reviewMgrB30.html">Manager B</option>
+    </select>
+    <select onchange="la(this.value)">
+      <option value="reviewMgrA90.html">2/12/2018</option>
+      <option value="reviewMgrA30.html">12/12/2018</option>
+      <option value="reviewMgrA60.html">1/12/2019</option>  
+    </select>
+    <select onchange="la(this.value)">
+      <option value="reviewMgrA90.html">90 day</option>
+      <option value="reviewMgrA30.html">30 day</option>
+      <option value="reviewMgrA60.html">60 day</option>
+	  </select><br><br>
+  </div>
+  <div id="cpTop">
+    <table>
+      <tr>
+        <th>Objective</th>
+        <th>Goal</th>
+        <th>Current results</th>
+      </tr>
+      <tr>
+        <th>Productivity</th>
+        <td>98%</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Dispatch Efficiency</th>
+        <td>86%</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>AIQ</th>
+        <td>>=95%</td>
+        <td></td>
+      </tr>
+    </table><br>
+  </div>
+<div>
+  <p>Goal progress:</p>
+  <h2>Goal</h2>
+  <select name="plans">
+    <option disabled selected>Productivity</option>
+    <option value="text">On Track</option>
+    <option value="text">Complete</option>
+    <option value="text">Not on Track</option>
+    <option value="text">Extended</option>
+  </select>
+  <select name="plans">
+    <option disabled selected>Capacity issues</option>
+    <option value="text">Skill</option>
+    <option value="text">Will</option>
+    <option value="text">Skill/ Will</option>
+    <option value="text">N/A</option>
+  </select><br><br>
+  <textarea>Enter Comments
+  </textarea>
+  <br>
+  <h2>Solution</h2>
+  <textarea>Enter Comments
+  </textarea><br><br>
+  <h2>Goal</h2>
+  <select name="plans">
+    <option disabled selected>Dispatch Efficiency</option>
+    <option value="text">On Track</option>
+    <option value="text">Complete</option>
+    <option value="text">Not on Track</option>
+    <option value="text">Extended</option>
+  </select>
+  <select name="plans">
+    <option disabled selected>Capacity issues</option>
+    <option value="text">Skill</option>
+    <option value="text">Will</option>
+    <option value="text">Skill/ Will</option>
+    <option value="text">N/A</option>
+  </select><br><br>
+  <textarea>Enter Comments
+  </textarea>
+  <br>
+  <h2>Solution</h2>
+  <textarea>Enter Comments
+  </textarea><br><br>
+  <h2>Goal</h2>
+  <br>
+  <select name="plans">
+    <option disabled selected>All In Quality</option>
+    <option value="text">On Track</option>
+    <option value="text">Complete</option>
+    <option value="text">Not on Track</option>
+    <option value="text">Extended</option>
+  </select>
+  <select name="plans">
+    <option disabled selected>Capacity issues</option>
+    <option value="text">Skill</option>
+    <option value="text">Will</option>
+    <option value="text">Skill/ Will</option>
+    <option value="text">N/A</option>
+  </select><br><br>
+  <textarea>Enter Comments
+  </textarea>
+  <br>
+  <h2>Solution</h2>
+  <textarea>Enter Comments
+  </textarea>
+  <h3>Coaching Area: Administrative</h3>
+    <select name="plans">
+    <option disabled selected>Proficiency</option>
+    <option value="text">Novice</option>
+    <option value="text">Intermediate</option>
+    <option value="text">Advanced</option>
+  </select>
+  <select name="plans">
+    <option disabled selected>Capacity issues</option>
+    <option value="text">Skill</option>
+    <option value="text">Will</option>
+    <option value="text">Skill/ Will</option>
+    <option value="text">N/A</option>
+  </select><br><br>
+    <textarea>Enter Comments
+    </textarea><br>
+    <h2>Solution</h2>
+    <textarea>Enter Comments 
+    </textarea>
+    <h3>Coaching Area: Soft Skills</h3>
+    <select name="plans">
+    <option disabled selected>Proficiency</option>
+    <option value="text">Novice</option>
+    <option value="text">Intermediate</option>
+    <option value="text">Advanced</option>
+  </select>
+  <select name="plans">
+    <option disabled selected>Capacity issues</option>
+    <option value="text">Skill</option>
+    <option value="text">Will</option>
+    <option value="text">Skill/ Will</option>
+    <option value="text">N/A</option>
+  </select><br><br>
+    <textarea>Enter Comments   
+    </textarea><br>
+    <h2>Solution</h2>
+    <textarea>Enter Comments 
+    </textarea><br>
+    <h3>Supplemental Coaching</h3>
+    <p>Adoption:</p>
+    <textarea>Enter Comments
+    </textarea><br>
+    <p>Successes:</p>
+    <textarea>Enter Comments
+    </textarea><br>
+    <p>Training provided:</p>
+    <textarea>Enter Comments
+    </textarea><br>
+    <p>Manager comments:</p>
+    <textarea>Enter Comments
+    </textarea><br>
+    <input type="submit" value="Submit" onclick="alert('The plan has been updated!')"/>
+    <input type="submit" value="Complete" onclick="alert('The plan will be completed, press ok to confirm!')"/>
+    <input type="submit" value="Extend" id="button" onclick="alert('The Plan will be Extended, press ok to confirm!')"/>
+    <a href="compCert.html" target="_blank">Print Certificate</a><br>
+  </div>
+  <footer>Created by: Humberto Hernandez | Contact: HH8905@att.com<br> Created for demonstration purpose only.
+  </footer>
+</body>
+
+</html>

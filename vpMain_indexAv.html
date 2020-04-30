@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>AT&T | you Coach ATO</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+      $(function(){
+          $('a').each(function(){
+              if ($(this).prop('href') == window.location.href) {
+                  $(this).addClass('active'); $(this).parents('li').addClass('active');
+              }
+          });
+      });
+
+  </script>
+</head>
+
+<body>
+  <script>
+
+    function la(src)
+    {
+
+    window.location=src;  
+    }
+  </script>
+  <header>
+  <img src="images/AT&T_globe.png" alt="globe" title="attGlobe" class="left" />
+  <img src="images/owl2.png" alt="owl" title="owl" class="owl" />
+  <h1>you Coach ATO</h1>
+  <div id="nav_bar">
+     <nav>
+      <ul>
+        <li><a href="indexAv.html" class="nav">Home</a></li>
+        <li><a href="createAv.html" class="nav">Create Plan</a></li>
+        <li><a href="reviewAv.html" class="nav">Review/ Edit Plan</a></li>
+        <li><a href="coachingAv.html" class="nav">Coaching</a>
+        </li>
+        <li><a href="index.html" class="nav">ATO View</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <div>
+  <p>Select Hierarchy</p>
+  <select>
+    <option value="text">VP</option>
+  </select>
+  <select onchange="la(this.value)">
+    <option>Select level</option>
+    <option value="dirMain_indexAv.html">Director</option>
+    <option value="amMian_indexAv.html">Area Manager</option>
+  </select>
+  </div>
+  <div id="cpTop">
+  <p>Team Summary</p>
+  <table>
+      <tr>
+        <th>Direct Reports</th>
+        <th>Open Strat</th>
+        <th>Strat CMP</th>
+        <th>Strat INC</th>
+        <th>Ride Day</th>
+      </tr>
+      <tr>
+        <th>Director A</th>
+        <td>9</td>
+        <td>4</td>
+        <td>7</td>
+        <td>35</td>
+      </tr>
+      <tr>
+        <th>Director B</th>
+        <td>4</td>
+        <td>13</td>
+        <td>1</td>
+        <td>38</td>
+      </tr>
+      <tr>
+        <th>Direct Reports</th>
+        <th>Open Plan's</th>
+        <th>Plan's CMP</th>
+        <th>Plan's INC</th>
+        <th>Coaching</th>
+      </tr>
+      <tr>
+        <th>Director A</th>
+        <td>0</td>
+        <td>4</td>
+        <td>0</td>
+        <td>35</td>
+      </tr>
+         <tr>
+        <th>Director B</th>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>45</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

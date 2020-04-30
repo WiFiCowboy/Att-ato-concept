@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>AT&T | you Coach ATO</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+      $(function(){
+          $('a').each(function(){
+              if ($(this).prop('href') == window.location.href) {
+                  $(this).addClass('active'); $(this).parents('li').addClass('active');
+              }
+          });
+      });
+
+  </script>
+</head>
+
+<body>
+  <script>
+
+    function la(src)
+    {
+
+    window.location=src;  
+    }
+  </script>
+  <header>
+  <img src="images/AT&T_globe.png" alt="globe" title="attGlobe" class="left" />
+  <img src="images/owl2.png" alt="owl" title="owl" class="owl" />
+  <h1>you Coach ATO</h1>
+  <div id="nav_bar">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav">Home</a></li>
+        <li><a href="create.html" class="nav">Create Strategy</a></li>
+        <li><a href="review.html" class="nav">Review/ Edit Strategy</a></li>
+        <li><a href="coaching.html" class="nav">Ride Day</a>
+        </li>
+        <li><a href="reviewAv.html" class="nav">AM View</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <div>
+    <p>Select Manager | Strategy Length</p>
+    <select onchange="la(this.value)">
+      <option disabled selected>Manager A</option>
+      <option value="reviewMgrB30.html">Manager B</option>
+    </select>
+    <select onchange="la(this.value)">
+      <option disabled selected>2/12/2019</option>
+      <option value="reviewMgrA30.html">12/12/2018</option>
+      <option value="reviewMgrA60.html">1/12/2019</option>  
+    </select>
+    <select onchange="la(this.value)">
+      <option disabled selected>90 day</option>
+      <option value="reviewMgrA30.html">30 day</option>
+      <option value="reviewMgrA60.html">60 day</option>
+	  </select><br><br>
+  </div>
+  <div id="cpTop">
+    <table>
+      <tr>
+        <th>Metric</th>
+        <th>Goal</th>
+        <th>Current results</th>
+      </tr>
+      <tr>
+        <th>Productivity</th>
+        <td>98%</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Dispatch Efficiency</th>
+        <td>86%</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>AIQ</th>
+        <td>>=95%</td>
+        <td></td>
+      </tr>
+    </table><br>
+  </div>
+<div class="example-1">
+    <div class="example-2">
+      <h3>Metric Progress</h3>
+      <h2>Goal</h2>
+      <select>
+        <option value="text">Productivity</option>     
+      </select>
+      <select name="plans">
+        <option value="text">Progress</option>
+        <option value="text">Exceeded</option>
+        <option value="text">On Track</option>
+        <option value="text">Complete</option>
+        <option value="text">Not on Track</option>
+        <option value="text">Extended</option>
+      </select>
+      <form><br>
+      <label>Metric Goal: 91%</label>
+      </form>
+      <h2>Diagnosis</h2>
+      <textarea>
+Example: Manager A knows how to pull their Productivity results. They know how to pull up individual tech results and deep dive into their day. Manager A does not look at their results daily and when they do they have no set time in their day for reviewing their results. As a result, Manager B is not aware of the reasons why his lowest preforming techs are preforming below standard. Therefore, Manager A does not investigate the root causes of why members of his/her team did not perform to standard the previous day. Manager B’s reason for not reviewing his/her results is that he/she feels that they do not have the time in their day, most days, to go through the previous day results.
+      </textarea>
+      <h2>Solution</h2>
+      <textarea>
+Example:Manager A will be in the office no later than 730am to review his/her results from the previous day.
+Manager A will deep dive into the days of the techs on his/her team that are the lowest performing from the previous day and the lowest performing techs month to date every day.
+Manager A will have the proper discussions around his results with his team.
+      </textarea><br>
+    </div>
+  </div>
+  <div class="example-1">
+    <div class="example-2">
+      <h2>Goal</h2>
+      <select>
+        <option value="text">Dispatch Efficiency</option>      
+      </select>
+      <select name="plans">
+        <option value="text">Progress</option>
+        <option value="text">Exceeded</option>
+        <option value="text">On Track</option>
+        <option value="text">Complete</option>
+        <option value="text">Not on Track</option>
+        <option value="text">Extended</option>
+      </select>
+      <form><br>
+      <label>Metric Goal: 80%</label>
+      </form>
+      <h2>Diagnosis</h2>
+      <textarea>
+Example:Manager A is fully aware of how to pull their results but does not review his/her results daily so he/she has not been able to manage his/her JEP’s effectively. Manager A allows techs to JEP’s their job via txt and is not always informed when a member of his/her team JEP’s a job. Manager A has a JEP process in place but does not consistently enforce his/her JEP process 
+      </textarea>
+      <h2>Solution</h2>
+      <textarea>
+Example:Manager A will be in the office no later than 730am to review his/her results from the previous day.
+Do not except or approve any JEP request via txt or email.
+All the members of Manager A’s team must get live over the phone approval by Manager A or another manager if he/she is unavailable to JEP any job.
+Manager will have to appropriate discussions for those who do not follow the process.
+      </textarea><br>
+    </div>
+  </div>
+  <div class="example-1">
+    <div class="example-2">
+      <h2>Goal</h2>
+      <select>
+        <option value="text">AIQ</option>      
+      </select>
+      <select name="plans">
+        <option value="text">Progress</option>
+        <option value="text">Exceeded</option>
+        <option value="text">On Track</option>
+        <option value="text">Complete</option>
+        <option value="text">Not on Track</option>
+        <option value="text">Extended</option>
+      </select>
+      <form><br>
+      <label>Metric Goal: 90%</label>
+      </form>
+      <h2>Diagnosis</h2>
+      <textarea>
+Example:Manager A knows how to pull his/her results but does not look at them every day for the reasons stated above. In addition to not being fully aware of who oh his/her team is struggling Manager B has difficulty with assisting their team technically. When members of his/her team call for technical help the technician is often referred to another tech for help or one of his/her peers. Manager A is not comfortable with the meter or LSBBT. 
+      </textarea>
+      <h2>Solution</h2>
+      <textarea>
+Example:Trained Manager B on the meter and LSBBT today and bookmarked all links for easy accessibility
+Manager A will be in the office no later than 730am to review his/her results from the previous day
+Manager A will review all repeats as they come in daily. If Manager A is out of the office for any reason he/she will review all repeats that came in during their time out of the office. 
+Manager A will the following tests on all repeats in LSBBT.
+Quality Check (real-time check)
+CPE Real Time Tool
+Real Time LPA
+History Performance
+Trending Tool (Error Counters)
+Manager A will quality all repeats failing in LSBBT
+Manager A will have the appropriate discussions and address all additional training needs for their team.
+      </textarea><br>
+    </div>
+  </div>
+  <div>
+  <h3>Administrative Progress</h3>
+  <h2>Goal</h2>
+      <select>
+        <option>Administrative</option>
+        <option value="text">Coaching Discussions</option>
+        <option value="text">Crew Meetings</option>
+        <option value="text">Disciplinary</option>
+        <option value="text">ECA</option>
+        <option value="text">EOY Appraisal</option>
+        <option value="text">Grammer</option>
+        <option value="text">MAS</option>
+        <option value="text">Other-Please specify</option>
+        <option value="text">Quality observations</option>
+        <option value="text">R.I.D.E.</option> 
+        <option value="text">Safety Meetings</option> 
+        <option value="text">Safety Observations</option> 
+        <option value="text">Scheduling</option> 
+        <option value="text">Time Approval</option>       
+      </select>
+      <select name="plans">
+        <option disabled selected>Proficiency</option>
+        <option value="text">Novice</option>
+        <option value="text">Intermediate</option>
+        <option value="text">Advanced</option>
+      </select>
+      <h2>Diagnosis</h2>
+      <textarea>
+After reviewing manager A’s documentation, I have found that he/she does not have the proper amount of qualities and safeties in the system. Also, the qualities and safety’s entered lack proper descriptions on what they observed, and some forms have no verbiage all just checked boxes. For the qualities and safeties entered into the system with verbiage lack detail, are generally one or two sentences long and grammar mistakes are almost always present. Manager A also waits till the end of the month to enter most of their qualities and safeties for the entire month. 
+      </textarea>
+      <h2>Solution</h2>
+      <textarea>
+Manager A will visit at least 3 techs a day, 4 days a week. If a day is missed, then the 3 visits will be made up within that week and or within 5 working days. All make up day must be complete before the close of the month
+Manager A will complete any observation without the proper verbiage and will have at least 4 full sentences.
+The verbiage must clearly denote during or post observation, describe what they inspected, the condition of what they inspected and or observed, any and all corrective direction given onsite if applicable, customer interaction and feedback if applicable, what the tech was covered on while you are on site, all work done correctly, all work actions performed safely, all deviations, safety violations and all relevant information that adds to the full understanding of what you observed while on site.
+      </textarea><br>
+    </div>
+    <div>
+    <h3>Soft Skill Progress</h3>
+    <select>
+      <option>Soft Skill</option>
+      <option value="text">Adaptability</option>
+      <option value="text">Communication</option>
+      <option value="text">Creativity</option>
+      <option value="text">Critical Thinking</option>
+      <option value="text">Interpersonal Communication</option>
+      <option value="text">Organization</option>
+      <option value="text">Other-Please specify</option>
+      <option value="text">Problem Solving</option>
+      <option value="text">Punctuality</option> 
+      <option value="text">Teamwork Skills</option> 
+      <option value="text">Time Management</option>       
+    </select>
+    <select name="plans">
+      <option disabled selected>Proficiency</option>
+      <option value="text">Novice</option>
+      <option value="text">Intermediate</option>
+      <option value="text">Advanced</option>
+    </select>
+    <h2>Diagnosis</h2>
+    <textarea>
+Manager A gets to work close to the time of his/her team’s start time. Get to work so close to the start of his/her team’s shift leave him/her little to no time to plan for the day. Also Manager B does not have any schedule planning in place so there is no order in their day or to their day. Manager A also does not know how to prioritize things in their day so often less important things get done while more important things remain un-started or unfinished.  
+    </textarea><br>
+    <h2>Solution</h2>
+    <textarea>
+Trained Manager A how to set reminders, move reminders and delete reminders.
+Before the close of work Manager A will utilize his/her Outlook Calendar to set reminders for the following day.
+Manager A will be in the office no later than 730am.
+Manager A will follow the schedule on in their Outlook Calendar and if something happens and it throws off his/her time table Manager A will prioritize what needs to be done that day and what can be moved if necessary to the following day.
+Manager A needs help in prioritizing his/her schedule they will reach out to me.
+    </textarea>
+    </div>
+    <div>
+    <h3>Supplemental Information</h3>
+    <p>Adoption:</p>
+    <textarea>Receptive to coaching. 
+Attends one-on-one meetings &  team training sessions. 
+Attends RIDE days. 
+Sends draft to coach if needed to review documentation prior to finalizing documentation in you Docs.
+    </textarea><br>
+    <p>Successes:</p>
+    <textarea>
+Manager is on track for exceeding productivity and dispatch efficiency goals. 
+    </textarea><br>
+    <p>Training provided:</p>
+    <textarea>
+Time Validation Summary (TVS) 
+DE DART Dashboard
+ACATS & Fleets website
+EDGE 
+Wifi Map App 
+    </textarea><br>
+  </div>
+  <div>
+    <form action="amAppr.html">
+      <input type="button" onclick="location.href='emailA.html';" value="Submit for Area Manager Approval "/>
+    </form>
+  </div>
+ 
+  <footer>Created by: Humberto Hernandez | HH8905@att.com<br> for demonstration purposes only.
+  </footer>
+</body>
+
+</html>

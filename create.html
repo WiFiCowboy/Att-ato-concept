@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>AT&T | You Coach ATO</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+      $(function(){
+          $('a').each(function(){
+              if ($(this).prop('href') == window.location.href) {
+                  $(this).addClass('active'); $(this).parents('li').addClass('active');
+              }
+          });
+      });
+  </script>
+</head>
+
+<body>
+  <script>
+    function la(src)
+    {
+    window.location=src;  
+    }
+  </script>
+  <header>
+  <img src="images/AT&T_globe.png" alt="globe" title="attGlobe" class="left" />
+  <img src="images/owl2.png" alt="owl" title="owl" class="owl" />
+  <h1>You Coach ATO</h1>
+  <div id="nav_bar">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav">Home</a></li>
+        <li><a href="create.html" class="nav">Create Strategy</a></li>
+        <li><a href="review.html" class="nav">Review/ Edit Strategy</a></li>
+        <li><a href="coaching.html" class="nav">Ride Day</a>
+        </li>
+        <li><a href="createAv.html" class="nav">AM View</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <div>  
+   <p>Select Hierarchy | Strategy Length:</p>
+  <select onchange="la(this.value)">
+    <option value="text">Select Level</option>
+    <option value="vpMain_create.html">VP</option>
+    <option value="dirMain_create.html">Director </option>
+    <option value="amMian_create.html">Area Manager</option>
+  </select>
+  </div>
+</body>
+</html>

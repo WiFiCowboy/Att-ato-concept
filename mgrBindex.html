@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>AT&T | you Coach ATO</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+      $(function(){
+          $('a').each(function(){
+              if ($(this).prop('href') == window.location.href) {
+                  $(this).addClass('active'); $(this).parents('li').addClass('active');
+              }
+          });
+      });
+
+  </script>
+</head>
+
+<body>
+  <script>
+
+    function la(src)
+    {
+
+    window.location=src;  
+    }
+  </script>
+  <header>
+  <img src="images/AT&T_globe.png" alt="globe" title="attGlobe" class="left" />
+  <img src="images/owl2.png" alt="owl" title="owl" class="owl" />
+  <h1>you Coach ATO</h1>
+  <div id="nav_bar">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav">Home</a></li>
+        <li><a href="create.html" class="nav">Create Strategy</a></li>
+        <li><a href="review.html" class="nav">Review/ Edit Strategy</a></li>
+        <li><a href="coaching.html" class="nav">Ride Day</a>
+        </li>
+        <li><a href="indexAv.html" class="nav">AM View</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <div>
+  <p>Select Hierarchy</p>
+  <select>
+    <option value="text">Director</option>
+  </select>
+  <select>
+    <option value="text">Area Manager</option>
+  </select>
+  <select onchange="la(this.value)">
+      <option value="text">Manager B</option>
+      <option value="mgrAindex.html">Manager A</option>
+      <option value="dirMain_index.html">Back One Level</option>
+    </select>
+  </div>
+<div id="cpTop">
+  <h3>Manager B Summary</h3>
+  <table>
+      <tr>
+        <th>Manager</th>
+        <th>Open Strat</th>
+        <th>Strat CMP</th>
+        <th>Strat INC</th>
+        <th>Ride Day</th>
+      </tr>
+      <tr>
+        <th>Manager B</th>
+        <td>1</td>
+        <td>2</td>
+        <td>0</td>
+        <td>20</td>
+      </tr>
+    </table>
+</div>
+<div>
+  <h3>Current Strategy</h3>
+  <div id="cpTop">
+    <table>
+      <tr>
+        <th>Current Metric Goals</th>
+        <th>30 Day</th>
+        <th>60 Day</th>
+        <th>90 Day</th>
+      </tr>
+      <tr>
+        <th>Productivity</th>
+        <td>82%</td>
+        <td>86%</td>
+        <td>90%</td>
+      </tr>
+      <tr>
+        <th>Dispatch Efficiency</th>
+        <td>76%</td>
+        <td>80%</td>
+        <td>86%</td>
+      </tr>
+      <tr>
+        <th>AIQ</th>
+        <td>92%</td>
+        <td>>=95%</td>
+        <td>>=95%</td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <th>Strategy progress</th>
+        <th>30 Day</th>
+        <th>60 Day</th>
+        <th>90 Day</th>
+      </tr>
+      <tr>
+        <th>Productivity</th>
+        <td>not on track</td>
+        <td>not on track</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Dispatch Efficiency</th>
+        <td>not on track</td>
+        <td>not on track</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>AIQ</th>
+        <td>on track</td>
+        <td>on track</td>
+        <td></td>
+      </tr>
+    </table>
+  </div><br>
+  <div class="example-1">
+    <div class="example-2">
+      <h3>Metric Progress</h3>
+      <h2>Goal</h2>
+      <select>
+        <option value="text">Productivity</option>     
+      </select>
+      <select name="plans">
+        <option value="text">Progress</option>
+        <option value="text">On Track</option>
+        <option value="text">Complete</option>
+        <option value="text">Not on Track</option>
+        <option value="text">Extended</option>
+        <option value="text">Exceeded</option>
+      </select>
+      <form><br>
+      <label>Metric: 82%</label>
+      </form>
+      <h2>Diagnosis</h2>
+      <textarea>Enter Comments</textarea>
+      <h2>Solution</h2>
+      <textarea>Enter Comments</textarea><br>
+    </div>
+  </div>
+  <div class="example-1">
+    <div class="example-2">
+      <h2>Goal</h2>
+      <select>
+        <option value="text">Dispatch Efficiency</option>      
+      </select>
+      <select name="plans">
+        <option value="text">Progress</option>
+        <option value="text">On Track</option>
+        <option value="text">Complete</option>
+        <option value="text">Not on Track</option>
+        <option value="text">Extended</option>
+        <option value="text">Exceeded</option>
+      </select>
+      <form><br>
+      <label>Metric: 76%</label>
+      </form>
+      <h2>Diagnosis</h2>
+      <textarea>Enter Comments</textarea>
+      <h2>Solution</h2>
+      <textarea>Enter Comments</textarea><br>
+    </div>
+  </div>
+  <div class="example-1">
+    <div class="example-2">
+      <h2>Goal</h2>
+      <select>
+        <option value="text">AIQ</option>      
+      </select>
+      <select name="plans">
+        <option value="text">Progress</option>
+        <option value="text">On Track</option>
+        <option value="text">Complete</option>
+        <option value="text">Not on Track</option>
+        <option value="text">Extended</option>
+        <option value="text">Exceeded</option>
+      </select>
+      <form><br>
+      <label>Metric: 92%</label>
+      </form>
+      <h2>Diagnosis</h2>
+      <textarea>Enter Comments</textarea>
+      <h2>Solution</h2>
+      <textarea>Enter Comments</textarea><br>
+    </div>
+  </div>
+  <div>
+      <a href="sample1.pdf" target="_blank">Print</a><br>
+    </form>
+  </div>
+  <footer>Created by: Humberto Hernandez | HH8905@att.com<br> for demonstration purposes only.
+  </footer>
+</body>
+</html>

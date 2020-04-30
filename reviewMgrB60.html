@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>AT&T | you Coach ATO</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+      $(function(){
+          $('a').each(function(){
+              if ($(this).prop('href') == window.location.href) {
+                  $(this).addClass('active'); $(this).parents('li').addClass('active');
+              }
+          });
+      });
+
+  </script>
+</head>
+
+<body>
+  <script>
+
+    function la(src)
+    {
+
+    window.location=src;  
+    }
+  </script>
+  <header>
+  <img src="images/AT&T_globe.png" alt="globe" title="attGlobe" class="left" />
+  <img src="images/owl2.png" alt="owl" title="owl" class="owl" />
+  <h1>you Coach ATO</h1>
+  <div id="nav_bar">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav">Home</a></li>
+        <li><a href="create.html" class="nav">Create Strategy</a></li>
+        <li><a href="review.html" class="nav">Review/ Edit Strategy</a></li>
+        <li><a href="coaching.html" class="nav">Ride Day</a>
+        </li>
+        <li><a href="reviewAv.html" class="nav">AM View</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <div>
+    <p>Select Manager | Strategy Length</p>
+    <select onchange="la(this.value)">
+      <option disabled selected>Manager B</option>
+      <option value="reviewMgrA30.html">Manager A</option>   
+    </select>
+    <select onchange="la(this.value)">
+      <option disabled selected>2/12/2019</option>
+      <option value="reviewMgrB30.html">1/12/2019</option>
+      <option value="reviewMgrB90.html">3/12/2019</option>
+    </select>
+    <select onchange="la(this.value)">
+      <option disabled selected>60 day</option>
+      <option value="reviewMgrB30.html">30 day</option>
+      <option value="reviewMgrB90.html">90 day</option>
+	  </select><br><br>
+  </div>
+  <div id="cpTop">
+    <table>
+      <tr>
+        <th>Metric</th>
+        <th>Goal</th>
+        <th>Current results</th>
+      </tr>
+      <tr>
+        <th>WiFi Upload</th>
+        <td>75%</td>
+        <td>64%</td>
+      </tr>
+      <tr>
+        <th>WiFi Pen Rate</th>
+        <td>10%</td>
+        <td>7%</td>
+      </tr>
+    </table><br>
+  </div>
+<div class="example-1">
+    <div class="example-2">
+      <h3>Metric Progress</h3>
+      <h2>Goal</h2>
+      <select>
+        <option value="text">WiFi Suite of Tools - Upload</option>     
+      </select>
+      <select name="plans">
+        <option value="text">Progress</option>
+        <option value="text">On Track</option>
+        <option value="text">Complete</option>
+        <option value="text">Not on Track</option>
+        <option value="text">Extended</option>
+        <option value="text">Exceeded</option>
+      </select>
+      <form><br>
+      <label>WiFi Upload Goal: 75%</label>
+      </form><br>
+      <select>
+        <option value="text">WiFi Suite of Tools - Pen Rate</option>      
+      </select>
+      <select name="plans">
+        <option value="text">Progress</option>
+        <option value="text">On Track</option>
+        <option value="text">Complete</option>
+        <option value="text">Not on Track</option>
+        <option value="text">Extended</option>
+        <option value="text">Exceeded</option>
+      </select>
+      <form><br>
+      <label>WiFi Pen Rate Goal: 10%</label>
+      </form>
+      <h2>Diagnosis</h2>
+      <textarea>12/12/2018:&#13;&#10;Manager needs additional training on the WiFi Suit of Tools and practical application in the field so that he can properly train their team on using the app and proper billing.</textarea>
+      <h2>Solution</h2>
+      <textarea>12/12/2018:&#13;&#10;1. Re-educate on the app and all its proper applications.&#13;&#10;2. RIDE day to meet with his techs so that he can comfortable&#13;&#10;    demonstrate to his technicians&#13;&#10;    and answering his technicians’ questions.&#13;&#10;3.Manager will re-cover his entire team on usage and&#13;&#10;    expectation  of the WiFi Testing in their next huddle.&#13;&#10;4.Manager and I will review WiFi results on a weekly basis to&#13;&#10;    help him determine where improvement is still needed.
+      </textarea><br>
+    </div>
+    </div>
+    <h3>Supplemental Information</h3>
+    <p>Adoption:</p>
+    <p>Successes:</p>
+    <p>Training provided:</p>
+    </div>
+  <div>
+    <form action="amAppr.html">
+      <input type="button" onclick="location.href='emailA.html';" value="Submit for Area Manager Approval "/>
+    </form>
+  </div>
+  <footer>Created by: Humberto Hernandez | HH8905@att.com<br>  for demonstration purposes only.
+  </footer>
+</body>
+</html>
+ 

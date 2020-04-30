@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>AT&T | you Coach ATO</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+      $(function(){
+          $('a').each(function(){
+              if ($(this).prop('href') == window.location.href) {
+                  $(this).addClass('active'); $(this).parents('li').addClass('active');
+              }
+          });
+      });
+
+  </script>
+</head>
+
+<body>
+  <script>
+    function la(src)
+    {
+    window.location=src;  
+    }
+  </script>
+  <header>
+  <img src="images/AT&T_globe.png" alt="globe" title="attGlobe" class="left" />
+  <img src="images/owl2.png" alt="owl" title="owl" class="owl" />
+  <h1>you Coach ATO</h1>
+  <div id="nav_bar">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav">Home</a></li>
+        <li><a href="create.html" class="nav">Create Strategy</a></li>
+        <li><a href="review.html" class="nav">Review/ Edit Strategy</a></li>
+        <li><a href="coaching.html" class="nav">Ride Day</a>
+        </li>
+        <li><a href="coachingAv.html" class="nav">AM View</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <div>
+    <p>Select Hierarchy</p>
+    <select onchange="la(this.value)">
+      <option value="text">Manager A</option>
+      <option value="coachA.html">Previous Selection</option>
+    </select><br><br>
+    <label>Date: 12/12/2018</label><br><br>
+    <label>Current 30/60/90 Strategy: Yes<br></label><br>
+  </div>
+  <div class="example-1">
+    <div class="example-2">
+      <h3>Benchmark Coaching</h3>
+      <select>
+        <option value="text">Billing</option>      
+      </select>
+      <select name="plans">
+        <option disabled selected>Proficiency</option>
+        <option value="text">Intermediate</option>
+      </select>
+      <select name="plans">
+        <option disabled selected>Capacity issues</option>
+        <option value="text">Skill</option>
+      </select><br>
+      <h2>Reason for coaching</h2>
+      <textarea>
+        Provided Coaching and training on Smart extender billing (AirTies). Trained manager on how to use and analyze data found on the AT&T Smart Extender Billing Summary. Explained the correlation between non-billed count and revenue missed. Also ensured Manager A understands how to check  all undetermined airtie installs for when airtie was detected compared to when his direct report was on site. Manager A was able to proficiently demonstrate how to use the  report and pull data for direct reports.
+      </textarea><br>
+      <h2>Solution</h2>
+      <textarea>
+       Advised Manager A  on how to coach techs during site visits for improved billing opportunities while also reducing repeats by ensuring customers premises have complete WiFi coverage.
+      </textarea><br>
+    </div>
+  </div>
+  <div>
+    <h3>Follow Up</h3>
+    <label>Follow up required:<br></label>
+    <select>
+      <option value="yes">Yes</option>
+    </select><br><br>
+    <label>Follow up Date: 1/12/2018</label><br>
+    <h2>Reason for Follow Up</h2>
+    <textarea name="comments">Scheduled with Manager A during session.
+    </textarea><br><br>
+  </div>
+  <div>
+      <input type="submit" value="submit" id="button" onclick="alert('Your Ride Day has been submitted!')"/>
+    </form>
+  </div>
+  <footer>Created by: Humberto Hernandez | HH8905@att.com<br>  for demonstration purposes only.
+  </footer>
+</body>
+</html>

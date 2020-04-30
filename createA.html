@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>AT&T | You Coach ATO</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+      $(function(){
+          $('a').each(function(){
+              if ($(this).prop('href') == window.location.href) {
+                  $(this).addClass('active'); $(this).parents('li').addClass('active');
+              }
+          });
+      });
+  </script>
+</head>
+
+<body>
+  <script>
+    function la(src)
+    {
+    window.location=src;  
+    }
+  </script>
+  <header>
+  <img src="images/AT&T_globe.png" alt="globe" title="attGlobe" class="left" />
+  <img src="images/owl2.png" alt="owl" title="owl" class="owl" />
+  <h1>You Coach ATO</h1>
+  <div id="nav_bar">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav">Home</a></li>
+        <li><a href="create.html" class="nav">Create Strategy</a></li>
+        <li><a href="review.html" class="nav">Review/ Edit Strategy</a></li>
+        <li><a href="coaching.html" class="nav">Ride Day</a>
+        </li>
+        <li><a href="indexAv.html" class="nav">AM View</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <div>  
+  <p>Select Hierarchy | Strategy Length:</p>
+  <select onchange="la(this.value)">
+    <option disabled selected>Manager A</option>
+    <option value="amMian_create.html">Previous Selection</option>
+  </select>
+    <select>
+    <option disabled selected>Strategy Length</option>
+    <option>30 day</option>
+    <option>60 day</option>
+    <option>90 day</option>
+  </select>  
+  </div>
+  </div>
+  <div class="example-1">
+    <div class="example-2">
+      <h3>Metric Goal</h3>
+      <h2>Goal</h2>
+      <select>
+        <option>Metric</option>
+		    <option value="text">AIQ</option>
+		    <option value="text">AirTie-Smart Extender Billing</option>
+		    <option value="text">Available Time Not Dispatched</option>
+		    <option value="text">Billing</option>
+        <option value="text">Dispatch Efficiency</option>
+		    <option value="text">Exception Hours</option>
+        <option value="text">Helper Rate</option>
+        <option value="text">HPC</option>
+        <option value="text">LSBBT</option>
+        <option value="text">Motor Vehicle Accidents-MVA</option>
+        <option value="text">Pair Change</option>
+        <option value="text">Personal Injury Accidents-PIA</option>
+        <option value="text">Productivity</option>
+        <option value="text">SIN 30</option>
+        <option value="text">Time Validation</option>
+        <option value="text">Upfront Usage</option>
+        <option value="text">VOC</option>
+        <option value="text">WiFi Suite of Tools - Upload</option>
+        <option value="text">WiFi Suite of Tools - Pen Rate</option> 			
+	    </select>
+      <select>
+        <option>Value Type</option>
+        <option value="text">Numeric</option>
+        <option value="text">Percentage</option> 
+      </select><br>
+        <form>
+          <label>Set Metric Goal</label>
+          <input type="range" name="Benchmark" id="ageInputId" value="24" min="-100" max="199" oninput="ageOutputId.value = ageInputId.value">
+          <output name="ageOutputName" id="ageOutputId">100</output>
+        </form>
+      <h2>Diagnosis</h2>  
+      <textarea>Enter Comments</textarea>
+      <h2>Solution</h2>
+      <textarea>Enter Comments</textarea><br>
+      <button class="btn-copy">Add Additional Goal</button>
+    </div>
+  </div>
+  <div class="example-1">
+    <div class="example-2">
+      <h3>Administrative Goal</h3>
+      <h2>Goal</h2>
+      <select>
+        <option>Administrative</option>
+        <option value="text">Coaching Discussions</option>
+        <option value="text">Crew Meetings</option>
+        <option value="text">Disciplinary</option>
+        <option value="text">ECA</option>
+        <option value="text">EOY Appraisal</option>
+        <option value="text">Grammer</option>
+        <option value="text">MAS</option>
+        <option value="text">Other-Please specify</option>
+        <option value="text">Quality observations</option>
+        <option value="text">R.I.D.E.</option> 
+        <option value="text">Safety Meetings</option> 
+        <option value="text">Safety Observations</option> 
+        <option value="text">Scheduling</option> 
+        <option value="text">Time Approval</option>       
+      </select><br>
+      <h2>Diagnosis</h2> 
+      <textarea>Enter Comments</textarea>
+      <h2>Solution</h2>
+      <textarea>Enter Comments</textarea><br>
+      <button class="btn-copy">Add Additional Goal</button>
+    </div>
+  </div>
+  <div class="example-1">
+    <div class="example-2">
+      <h3>Soft Skill Goal</h3>
+      <h2>Goal</h2>
+      <select>
+        <option>Soft Skill</option>
+        <option value="text">Adaptability</option>
+        <option value="text">Communication</option>
+        <option value="text">Creativity</option>
+        <option value="text">Critical Thinking</option>
+        <option value="text">Interpersonal Communication</option>
+        <option value="text">Organization</option>
+        <option value="text">Other-Please specify</option>
+        <option value="text">Problem Solving</option>
+        <option value="text">Punctuality</option> 
+        <option value="text">Teamwork Skills</option> 
+        <option value="text">Time Management</option>       
+      </select><br>
+      <h2>Diagnosis</h2> 
+      <textarea>Enter Comments</textarea>
+      <h2>Solution</h2>
+      <textarea>Enter Comments</textarea><br>
+      <button class="btn-copy">Add Additional Goal</button>
+    </div>
+  </div>
+  <script type="text/javascript">
+        $(function(){
+          $(".btn-copy").on('click', function(){
+            var ele = $(this).closest('.example-2').clone(true);
+            $(this).closest('.example-2').after(ele);
+          })
+        })
+  </script>
+  <div>
+    <form action="amAppr.html">
+      <input type="button" onclick="location.href='emailA.html';" value="Submit for Area Manager Approval "/>
+    </form>
+  </div>
+  <footer>Created by: Humberto Hernandez | HH8905@att.com<br>  for demonstration purposes only.
+  </footer>
+</body>
+</html>

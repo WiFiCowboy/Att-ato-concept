@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>AT&T | you Coach ATO</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+      $(function(){
+          $('a').each(function(){
+              if ($(this).prop('href') == window.location.href) {
+                  $(this).addClass('active'); $(this).parents('li').addClass('active');
+              }
+          });
+      });
+
+  </script>
+</head>
+
+<body>
+  <script>
+    function la(src)
+    {
+    window.location=src;  
+    }
+  </script>
+  <header>
+  <img src="images/AT&T_globe.png" alt="globe" title="attGlobe" class="left" />
+  <img src="images/owl2.png" alt="owl" title="owl" class="owl" />
+  <h1>you Coach ATO</h1>
+  <div id="nav_bar">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav">Home</a></li>
+        <li><a href="create.html" class="nav">Create Strategy</a></li>
+        <li><a href="review.html" class="nav">Review/ Edit Strategy</a></li>
+        <li><a href="coaching.html" class="nav">Ride Day</a>
+        </li>
+        <li><a href="coachingAv.html" class="nav">AM View</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <div>
+    <p>Select Hierarchy</p>
+    <select onchange="la(this.value)">
+      <option value="text">Manager B</option>
+      <option value="coachB.html">Previous Selection</option>
+    </select><br><br>
+    <label>Date:<input type="date" name="date" id="dateinput" ></label><br><br>
+    <label>Current 30/60/90 Strategy:<br></label><br>
+    <select>
+      <option>Select</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+  </div>
+  <div class="example-1">
+    <div class="example-2">
+      <h3>Ride Day Coverage</h3>
+      <select>
+        <option disabled selected>Select Coverage</option>
+        <option>--Metric Type----</option>
+        <option value="text">AIQ</option>
+        <option value="text">AirTie-Smart Extender Billing</option>
+        <option value="text">Available Time Not Dispatched</option>
+        <option value="text">Billing</option>
+        <option value="text">Dispatch Efficiency</option>
+        <option value="text">Exception Hours</option>
+        <option value="text">Helper Rate</option>
+        <option value="text">HPC</option>
+        <option value="text">LSBBT</option>
+        <option value="text">Motor Vehicle Accidents-MVA</option>
+        <option value="text">Pair Change</option>
+        <option value="text">Personal Injury Accidents-PIA</option>
+        <option value="text">Productivity</option>
+        <option value="text">SIN 30</option>
+        <option value="text">Time Validation</option>
+        <option value="text">Upfront Usage</option>
+        <option value="text">VOC</option>
+        <option value="text">WiFi Suite of Tools</option>
+        <option>--Administrative Type----</option>
+        <option value="text">Coaching Discussions</option>
+        <option value="text">Crew Meetings</option>
+        <option value="text">Disciplinary</option>
+        <option value="text">ECA</option>
+        <option value="text">EOY Appraisal</option>
+        <option value="text">Grammer</option>
+        <option value="text">MAS</option>
+        <option value="text">Other-Please specify</option>
+        <option value="text">Quality observations</option>
+        <option value="text">R.I.D.E.</option> 
+        <option value="text">Safety Meetings</option> 
+        <option value="text">Safety Observations</option> 
+        <option value="text">Scheduling</option> 
+        <option value="text">Time Approval</option>
+        <option>--Soft Skill Type----</option>
+        <option value="text">Adaptability</option>
+        <option value="text">Communication</option>
+        <option value="text">Creativity</option>
+        <option value="text">Critical Thinking</option>
+        <option value="text">Interpersonal Communication</option>
+        <option value="text">Organization</option>
+        <option value="text">Other-Please specify</option>
+        <option value="text">Problem Solving</option>
+        <option value="text">Punctuality</option> 
+        <option value="text">Teamwork Skills</option> 
+        <option value="text">Time Management</option>        
+      </select><br>
+      <h2>Reason for Coverage</h2>
+      <textarea>Enter Comments</textarea>
+      <h2>Areas Of Opportunity </h2>
+      <textarea>Enter Comments</textarea><br>
+      <button class="btn-copy">Add Additional</button>
+    </div>
+    <script type="text/javascript">
+        $(function(){
+          $(".btn-copy").on('click', function(){
+            var ele = $(this).closest('.example-2').clone(true);
+            $(this).closest('.example-2').after(ele);
+          })
+        })
+  </script>
+  <div>
+    <h3>Follow Up</h3>
+    <label>Follow up required:<br></label>
+    <select>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select><br><br>
+    <label>Follow up Date:<input type="date" name="date" id="dateinput" ></label><br>
+    <h2>Reason for Follow Up</h2>
+    <textarea name="comments">Enter Comments</textarea><br><br>
+  </div>
+  <div>
+      <input type="submit" value="submit" id="button" onclick="alert('Your Ride Day has been submitted!')"/>
+  </div>
+  <footer>Created by: Humberto Hernandez | HH8905@att.com<br>  for demonstration purposes only.
+  </footer>
+</body>
+</html>

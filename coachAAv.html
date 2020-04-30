@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>AT&T | you Coach ATO</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+      $(function(){
+          $('a').each(function(){
+              if ($(this).prop('href') == window.location.href) {
+                  $(this).addClass('active'); $(this).parents('li').addClass('active');
+              }
+          });
+      });
+
+  </script>
+</head>
+
+<body>
+  <script>
+    function la(src)
+    {
+    window.location=src;  
+    }
+  </script>
+  <header>
+  <img src="images/AT&T_globe.png" alt="globe" title="attGlobe" class="left" />
+  <img src="images/owl2.png" alt="owl" title="owl" class="owl" />
+  <h1>you Coach ATO</h1>
+  <div id="nav_bar">
+    <nav>
+      <ul>
+        <li><a href="indexAv.html" class="nav">Home</a></li>
+        <li><a href="createAv.html" class="nav">Create Plan</a></li>
+        <li><a href="reviewAv.html" class="nav">Review/ Edit Plan</a></li>
+        <li><a href="coachingAv.html" class="nav">Coaching</a>
+        </li>
+        <li><a href="coachingAv.html" class="nav">ATO View</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <div>
+    <p>Select Hierarchy | Manager:</p>
+    <select onchange="la(this.value)">
+      <option value="text">Manager A</option>
+      <option value="coachNewAAv.html">New</option>
+      <option value="sample_1Av.html">Existing</option>
+      <option value="amMian_coachAv.html">Previous selection</option>
+    </select><br><br>
+  </div>
+</body>
+</html>

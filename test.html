@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>test</title>
+  <style type="text/css">
+    #showMe{
+    display:none;
+    }
+  </style>
+  <script type="text/javascript">
+     var elem = document.getElementById("security_question_1");
+   elem.onchange = function(){
+       hiddenDiv.style.display = (this.value == "") ? "none":"block";
+   };
+</script>
+</head>
+<body>
+  <select class="default" id="security_question_1" name="security_question_1">
+        <option value="" selected>Select question...</option>
+        <option value="1">Question One</option>
+        <option value="2">Question Two</option>
+        <option value="3">Question Three</option>
+        <option value="4">Question Four</option>
+        <option value="5">Question Five</option>
+        <option value="6">Question Six</option> 
+    </select>
+<div id="showMe">Value Selected</div>
+</body>
+</html>
